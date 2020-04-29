@@ -8,6 +8,7 @@ getFilmInfoFull
 
 ## Install
 Since this gem is not published yet, you need to clone this repository to your local machine and add following code to your `Gemfile`
+
 `gem 'filmweb_api', path: '~/path/to/filmweb_api_gem'`
 
 simply run 
@@ -15,10 +16,11 @@ simply run
 `bundle install`
 
 and add this line to file in which you want to use FilmwebApi
+
 `require 'filmweb_api'` 
 
 ## Usage
-Once you've installed gem, you are able to use FilmwebApi class. To send a request to Filmweb.pl create an instance of FilmwebApi with `method:` and `movie_id:` params
+Once you've installed gem, you are able to use FilmwebApi class. To send a request to Filmweb.pl create an instance of FilmwebApi with `method:` and `movie_id:` params and call `get` method
 ```
 FilmwebApi.new(method: <filmweb_api_method>, movie_id: <movie_id>).get
 ```
