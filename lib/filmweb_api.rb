@@ -54,7 +54,7 @@ class FilmwebApi
 
   def brackets_data_from_response
     raise ActionController::RoutingError, 'Not Found' unless api_response_body[/\[.*?\]/].present?
-    api_response_body[/\[.*?\]/].tr('[]', '')
+    api_response_body[/\[.*?\]/].tr('[]', '').tr("null", "")
   end
 
   def generate_signature
