@@ -8,7 +8,8 @@ Gem::Specification.new do |s|
   s.email       = 'contact@damiandomzalski.com'
   s.files       = Dir["{lib}/**/*"]
   s.add_development_dependency 'rspec', '~> 3.9'
-  s.add_development_dependency 'rest-client'
+  s.add_dependency 'rest-client', '~> 2.0.1'
+  s.add_dependency 'activesupport', '~> 5.0.0.1'
   s.homepage    =
     'https://rubygems.org/gems/filmweb_api'
   s.license       = 'MIT'
