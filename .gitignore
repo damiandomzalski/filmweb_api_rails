@@ -1,2 +1,5 @@
 # Ignore gem builds
 *.gem
+
+# Ignore MacOS file about folder's attributes
+.DS_Store
