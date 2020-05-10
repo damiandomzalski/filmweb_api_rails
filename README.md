@@ -1,5 +1,5 @@
-# filmweb_api_gem
-[In progress] Filmweb.pl unofficial API client
+# filmweb_api_rails
+Filmweb.pl unofficial API client
 
 ## Currently available methods:
 ```
@@ -22,7 +22,7 @@ and add this line to file in which you want to use FilmwebApi
 ## Usage
 Once you've installed gem, you are able to use FilmwebApi class. To send a request to Filmweb.pl create an instance of FilmwebApi with `method:` and `movie_id:` params and call `get` method
 ```
-FilmwebApi.new(method: <filmweb_api_method>, movie_id: <movie_id>).get
+FilmwebApi.new(method: <filmweb_api_method>, <method's attributes, example: movie_id: 12345>).get
 ```
 The response is a hash of full movie info, it contains: 
 
