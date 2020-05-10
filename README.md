@@ -1,4 +1,4 @@
-# filmweb_api_gem
+# filmweb_api_rails
 Filmweb.pl unofficial API client
 
 ## Currently available methods:
