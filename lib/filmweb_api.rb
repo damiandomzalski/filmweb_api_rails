@@ -11,15 +11,15 @@ class FilmwebApi
   end
 
   def get
-    raise ArgumentError.new("Passed method not supported") unless method_supported?
+    raise ArgumentError.new("Passed method not supported") unless method_defined?
     raise ArgumentError.new("You need to pass all required attributes for that method") unless correct_attributes_for_method?
     method_handler.new(attributes.slice(*method_handler::REQUEST_ATTRIBUTES)).call
   end
 
   private
 
-  def method_supported?
-    File.exist?(File.expand_path("./lib/filmweb_api/method_handlers/#{method.underscore}_handler.rb"))
+  def method_defined?
+    defined?(method_handler) == "method"
   end
 
   def correct_attributes_for_method?
