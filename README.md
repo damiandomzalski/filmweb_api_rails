@@ -7,9 +7,13 @@ getFilmInfoFull
 ```
 
 ## Install
-Since this gem is not published yet, you need to clone this repository to your local machine and add following code to your `Gemfile`
+Add following line to your `Gemfile`
 
-`gem 'filmweb_api', path: '~/path/to/filmweb_api_gem'`
+`gem 'filmweb_api', '~> 0.1.0'
+
+or install it via console
+
+`gem install filmweb_api`
 
 simply run 
 
