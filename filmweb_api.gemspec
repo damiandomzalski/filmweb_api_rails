@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'filmweb_api'
-  s.version     = '0.1.0.1'
+  s.version     = '0.1.1.1'
   s.date        = '2020-06-05'
   s.summary     = "Unofficial Filmweb api client"
   s.description = "Simple way to get data from filmweb"
