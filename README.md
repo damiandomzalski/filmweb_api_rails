@@ -9,7 +9,7 @@ getFilmInfoFull
 ## Install
 Add following line to your `Gemfile`
 
-`gem 'filmweb_api'
+`gem 'filmweb_api'`
 
 or install it via console
 
